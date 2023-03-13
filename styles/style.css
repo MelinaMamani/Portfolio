@@ -1,0 +1,114 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    background-color: #000;
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+    background-color: #ffadd1;
+    height: 70px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .menuItems {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuItems.show {
+    top: 65px !important;
+}
+
+.menu .menuItems li {
+    list-style: none;
+}
+
+.menu .menuItems li a {
+    padding: 12px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    transition: background-color 2s ease-out 100ms;
+    border-radius: 25px;
+    display: block;
+}
+
+.menu .menuItems li a:hover {
+    background-color: #e67ca0;
+}
+
+.btnMenu {
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.iconMenu {
+    width: 25px;
+}
+
+@media screen and (max-width: 735px) {
+    .menu .menuItems li a {
+        font-size: 1rem;
+    }
+
+    .menu {
+        height: 65px;
+        justify-content: flex-end;
+    }
+
+    .btnMenu {
+        display: inline-flex;
+    }
+
+    .btnMenu .name {
+        font-size: 1.2em;
+        margin-right: 1em;
+    }
+
+    .menu .menuItems {
+        position: fixed;
+        width: 100vw;
+        height: 35%;
+        background: #ffca7f;
+        top: -100vh;
+        text-align: center;
+        transition: all 2s;
+        flex-direction: column;
+    }
+
+    .menu .menuItems li a:hover {
+        background: none;
+    }
+}
+
+@media screen and (max-width: 735px) and (orientation: landscape) {
+    .menuItems li {
+        margin: 5px 0 0 0;
+    }
+
+    .menuItems {
+        overflow: scroll;
+        height: 65%;
+    }
+}

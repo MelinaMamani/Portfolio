@@ -1,0 +1,261 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+main {
+    padding: 3rem 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    height: 90vh;
+}
+
+main .profileImage {
+    border-radius: 100%;
+    border: 5px solid #ffadd1;
+    width: 400px;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: #f4d4e2;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+section {
+    color: #fff;
+    padding: 3rem;
+}
+
+.aboutMe {
+    display: flex;
+    gap: 1.5rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.aboutMe h2 {
+    color: rgb(48, 48, 48);
+}
+
+.aboutMe p {
+    color: black;
+}
+
+.aboutMe article {
+    width: 65%;
+}
+
+p {
+    font-size: 1.15rem;
+}
+
+.aboutMe .img {
+    width: 35%;
+    height: 25rem;
+    object-fit: contain;
+}
+
+.imgRes {
+    display: none;
+    object-fit: contain;
+}
+
+.containerExp {
+    display: flex;
+    gap: 3rem;
+    padding: 1.5rem 0;
+}
+
+.experienceBox {
+    width: 73%;
+}
+
+.experienceBox li {
+    font-size: 1.2rem;
+}
+
+.imgExpBox {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.imgExpBox img {
+    width: 100%;
+}
+
+.imgExpBox a {
+    text-align: center;
+    color: white;
+}
+
+.skillsBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.panelSkill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+}
+
+.iconSkill {
+    width: 5rem;
+}
+
+.projectsSection {
+    align-self: flex-start;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.projectBox {
+    background-color: #ffca7f;
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.projectImg {
+    width: 19rem;
+    border-radius: 0.25rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.buttons a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #ffadd1;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.icon {
+    width: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        height: 82vh;
+        padding-top: 6rem;
+    }
+
+    .containerExp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experienceBox {
+        width: 100%;
+    }
+
+    .imgExpBox {
+        width: 55%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .aboutMe {
+        flex-direction: column;
+    }
+
+    .aboutMe article {
+        width: 100%;
+    }
+
+    .aboutMe .img {
+        display: none;
+    }
+
+    .aboutMe .imgRes {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    main {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        height: 80vh;
+        padding-top: 6rem;
+    }
+
+    main img {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .imgExpBox {
+        width: 100%;
+    }
+}
