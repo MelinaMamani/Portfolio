@@ -259,7 +259,30 @@ footer a {
         width: 100%;
     }
 
+    .skillsBox {
+        gap: 1.5rem;
+    }
+
+    .projectsSection {
+        padding: 1rem;
+    }
+
     .projectBox {
         padding: 1.5rem 1rem;
+        align-items: center;
+    }
+
+    .iconSkill {
+        width: 3rem;
+    }
+
+    .projectImg {
+        width: 14rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        height: 83vh;
     }
 }
